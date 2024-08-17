@@ -5,7 +5,7 @@
   scroll-behavior: smooth;
 }
 .all {
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 .header {
   width: 100%;
@@ -449,4 +449,27 @@ nav.sticky {
   font-size: 17px;
   margin-top: 50px;
   color: rgb(43, 42, 42);
+}
+.product-item{
+  width:350px;
+  padding: 20px;
+  box-shadow: 0 0 4px -1px black;
+  border-radius: 5px;
+  overflow: hidden;
+  img{
+    
+    height: 240px;
+    object-fit: cover;
+
+  }
+  h3{
+    font-style:1.1rem;
+  }
+  .prices{
+    display: flex;
+    justify-content: space-between;
+    &>p:first-child{
+      text-decoration: line-through;
+    }
+  }
 }
